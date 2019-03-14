@@ -1,0 +1,695 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*FUENTES*/
+@font-face {
+  font-family: "Arimo";
+  src: url("../fonts/Arimo-Regular.eot");
+  src: url("../fonts/Arimo-Regular.woff") format("woff"), url("../fonts/Arimo-Regular.woff2") format("woff2"), url("../fonts/Arimo-Regular.svg#filename") format("svg");
+}
+@font-face {
+  font-family: "Arimo Bold";
+  src: url("../fonts/Arimo-Bold.eot");
+  src: url("../fonts/Arimo-Bold.woff") format("woff"), url("../fonts/Arimo-Bold.woff2") format("woff2"), url("../fonts/Arimo-Bold.svg#filename") format("svg");
+}
+/**/
+/*COLORES*/
+/**/
+/*GENÉRICOS*/
+/* line 33, ../sass/screen.scss */
+*:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* line 38, ../sass/screen.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #EDEEF0;
+  font-family: "Arimo";
+}
+
+/* line 45, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+
+/* line 49, ../sass/screen.scss */
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s ease-in;
+}
+
+/* line 54, ../sass/screen.scss */
+img {
+  vertical-align: bottom;
+}
+
+/*HEADER*/
+/* line 59, ../sass/screen.scss */
+.redes-sociales-header {
+  height: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 65, ../sass/screen.scss */
+.redes-sociales-header a {
+  color: #878787;
+}
+/* line 68, ../sass/screen.scss */
+.redes-sociales-header a:hover {
+  color: #092F87;
+}
+
+/* line 72, ../sass/screen.scss */
+header {
+  padding: 35px 0;
+}
+/* line 74, ../sass/screen.scss */
+header .logo {
+  display: block;
+}
+/* line 76, ../sass/screen.scss */
+header .logo img {
+  width: 250px;
+}
+/* line 81, ../sass/screen.scss */
+header nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* line 86, ../sass/screen.scss */
+header nav ul li {
+  padding: 0 30px;
+  border-right: 1px solid #092F87;
+}
+/* line 89, ../sass/screen.scss */
+header nav ul li a {
+  padding-bottom: 10px;
+  border-bottom: 1px solid transparent;
+  line-height: 30px;
+  font-size: 12px;
+  color: #878787;
+}
+/* line 96, ../sass/screen.scss */
+header nav ul li a:hover {
+  border-bottom: 1px solid #092F87;
+  color: #878787;
+}
+
+/**/
+/* line 106, ../sass/screen.scss */
+.linea {
+  width: 100%;
+  height: 1px;
+  position: relative;
+  background: #878787;
+}
+
+/*MAIN*/
+/* line 114, ../sass/screen.scss */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px !important;
+}
+/* line 118, ../sass/screen.scss */
+.swiper-container .swiper-slide {
+  padding: 100px 50px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+/* line 122, ../sass/screen.scss */
+.swiper-container .swiper-slide .titulo {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: rgba(9, 47, 135, 0.5);
+  font-family: "Arimo Bold";
+  font-size: 36px;
+  color: #FFF;
+}
+/* line 131, ../sass/screen.scss */
+.swiper-container .swiper-slide .texto {
+  max-width: 50%;
+  padding: 10px;
+  background: rgba(9, 47, 135, 0.5);
+  font-size: 20px;
+  color: #FFF;
+}
+
+/* line 140, ../sass/screen.scss */
+.intro {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 75px 0;
+}
+/* line 146, ../sass/screen.scss */
+.intro h1 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Arimo Bold";
+  font-size: 22px;
+  color: #878787;
+}
+/* line 153, ../sass/screen.scss */
+.intro p {
+  display: inline-block;
+  margin: 20px 0;
+  text-align: justify;
+  font-size: 18px;
+  color: #878787;
+}
+
+/* line 161, ../sass/screen.scss */
+.quienes-somos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 75px 0;
+}
+/* line 167, ../sass/screen.scss */
+.quienes-somos h1 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Arimo Bold";
+  font-size: 22px;
+  color: #092F87;
+}
+/* line 174, ../sass/screen.scss */
+.quienes-somos p {
+  display: inline-block;
+  margin: 20px 0;
+  text-align: justify;
+  font-size: 18px;
+  color: #878787;
+}
+
+/* line 182, ../sass/screen.scss */
+.servicios {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 75px 0;
+  border-top: 1px solid #878787;
+  border-bottom: 1px solid #878787;
+}
+/* line 190, ../sass/screen.scss */
+.servicios h1 {
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #092F87;
+}
+/* line 196, ../sass/screen.scss */
+.servicios .farmaceutica {
+  background: #092F87 url("../images/bg-farmaceutica.png");
+}
+/* line 199, ../sass/screen.scss */
+.servicios .bioequivalencia {
+  background: #3D529D url("../images/bg-bioequivalencia.png");
+}
+/* line 202, ../sass/screen.scss */
+.servicios .cosmetica {
+  background: #717AB6 url("../images/bg-cosmetica.png");
+}
+/* line 205, ../sass/screen.scss */
+.servicios .pesticida-plaguicidas {
+  background: #A1A3CE url("../images/bg-pesticida-plaguicidas.png");
+}
+/* line 208, ../sass/screen.scss */
+.servicios .farmaceutica,
+.servicios .bioequivalencia,
+.servicios .cosmetica,
+.servicios .pesticida-plaguicidas {
+  min-height: 255px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-position: bottom right !important;
+  background-repeat: no-repeat !important;
+  background-size: contain;
+}
+/* line 219, ../sass/screen.scss */
+.servicios .farmaceutica span,
+.servicios .bioequivalencia span,
+.servicios .cosmetica span,
+.servicios .pesticida-plaguicidas span {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 24px;
+  color: #FFF;
+}
+/* line 226, ../sass/screen.scss */
+.servicios .farmaceutica:hover,
+.servicios .bioequivalencia:hover,
+.servicios .cosmetica:hover,
+.servicios .pesticida-plaguicidas:hover {
+  cursor: pointer;
+}
+/* line 232, ../sass/screen.scss */
+.servicios .contenedor-tabs {
+  margin-top: 100px;
+  background: #FFF;
+}
+/* line 237, ../sass/screen.scss */
+.servicios .contenedor-tabs .ui-tabs-vertical .ui-tabs-nav li {
+  width: 100%;
+  position: relative;
+}
+/* line 240, ../sass/screen.scss */
+.servicios .contenedor-tabs .ui-tabs-vertical .ui-tabs-nav li a {
+  width: 100%;
+  display: block;
+}
+/* line 245, ../sass/screen.scss */
+.servicios .contenedor-tabs .ui-tabs-vertical .ui-tabs-nav li.ui-state-active {
+  margin: 0 !important;
+}
+/* line 250, ../sass/screen.scss */
+.servicios .contenedor-tabs .titulo-tab {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  background: #092F87;
+}
+/* line 260, ../sass/screen.scss */
+.servicios .contenedor-tabs .titulo-tab span {
+  font-size: 24px;
+  color: #FFF;
+}
+/* line 264, ../sass/screen.scss */
+.servicios .contenedor-tabs .titulo-tab img {
+  margin: 0 20px;
+}
+/* line 269, ../sass/screen.scss */
+.servicios .contenedor-tabs #farmaceutica2 .titulo-tab {
+  background: #092F87;
+}
+/* line 274, ../sass/screen.scss */
+.servicios .contenedor-tabs #bioequivalencia2 .titulo-tab {
+  background: #3D529D;
+}
+/* line 279, ../sass/screen.scss */
+.servicios .contenedor-tabs #cosmetica2 .titulo-tab {
+  background: #717AB6;
+}
+/* line 284, ../sass/screen.scss */
+.servicios .contenedor-tabs #pesticida-plaguicidas2 .titulo-tab {
+  background: #A1A3CE;
+}
+/* line 292, ../sass/screen.scss */
+.servicios .contenedor-tabs #tabs1 ul,
+.servicios .contenedor-tabs #tabs2 ul,
+.servicios .contenedor-tabs #tabs3 ul,
+.servicios .contenedor-tabs #tabs4 ul {
+  width: 100%;
+}
+/* line 295, ../sass/screen.scss */
+.servicios .contenedor-tabs #tabs1 ul li a,
+.servicios .contenedor-tabs #tabs2 ul li a,
+.servicios .contenedor-tabs #tabs3 ul li a,
+.servicios .contenedor-tabs #tabs4 ul li a {
+  padding: 20px;
+  background: #E3E3E3;
+  border-bottom: 1px solid #878787;
+}
+/* line 299, ../sass/screen.scss */
+.servicios .contenedor-tabs #tabs1 ul li a span,
+.servicios .contenedor-tabs #tabs2 ul li a span,
+.servicios .contenedor-tabs #tabs3 ul li a span,
+.servicios .contenedor-tabs #tabs4 ul li a span {
+  font-size: 18px;
+  color: #706F6F;
+}
+/* line 306, ../sass/screen.scss */
+.servicios .contenedor-tabs #tabs1 ul li.ui-state-active a,
+.servicios .contenedor-tabs #tabs2 ul li.ui-state-active a,
+.servicios .contenedor-tabs #tabs3 ul li.ui-state-active a,
+.servicios .contenedor-tabs #tabs4 ul li.ui-state-active a {
+  background: #C6C6C6 !important;
+}
+/* line 308, ../sass/screen.scss */
+.servicios .contenedor-tabs #tabs1 ul li.ui-state-active a span,
+.servicios .contenedor-tabs #tabs2 ul li.ui-state-active a span,
+.servicios .contenedor-tabs #tabs3 ul li.ui-state-active a span,
+.servicios .contenedor-tabs #tabs4 ul li.ui-state-active a span {
+  font-family: "Arimo Bold";
+  color: #092F87 !important;
+}
+/* line 313, ../sass/screen.scss */
+.servicios .contenedor-tabs #tabs1 ul li.ui-state-active a:after,
+.servicios .contenedor-tabs #tabs2 ul li.ui-state-active a:after,
+.servicios .contenedor-tabs #tabs3 ul li.ui-state-active a:after,
+.servicios .contenedor-tabs #tabs4 ul li.ui-state-active a:after {
+  margin-top: -31px;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 25px solid #C6C6C6;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  content: '';
+}
+/* line 325, ../sass/screen.scss */
+.servicios .contenedor-tabs #tabs1 ul li:last-child a,
+.servicios .contenedor-tabs #tabs2 ul li:last-child a,
+.servicios .contenedor-tabs #tabs3 ul li:last-child a,
+.servicios .contenedor-tabs #tabs4 ul li:last-child a {
+  border-bottom: 0 !important;
+}
+/* line 329, ../sass/screen.scss */
+.servicios .contenedor-tabs #tabs1 ul .ui-tabs .ui-tabs-nav li.ui-tabs-active,
+.servicios .contenedor-tabs #tabs2 ul .ui-tabs .ui-tabs-nav li.ui-tabs-active,
+.servicios .contenedor-tabs #tabs3 ul .ui-tabs .ui-tabs-nav li.ui-tabs-active,
+.servicios .contenedor-tabs #tabs4 ul .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin: 0 !important;
+}
+/* line 333, ../sass/screen.scss */
+.servicios .contenedor-tabs #tabs1 img,
+.servicios .contenedor-tabs #tabs2 img,
+.servicios .contenedor-tabs #tabs3 img,
+.servicios .contenedor-tabs #tabs4 img {
+  width: 100%;
+  margin-bottom: 35px;
+}
+/* line 337, ../sass/screen.scss */
+.servicios .contenedor-tabs #tabs1 p,
+.servicios .contenedor-tabs #tabs2 p,
+.servicios .contenedor-tabs #tabs3 p,
+.servicios .contenedor-tabs #tabs4 p {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #878787;
+}
+
+/* line 345, ../sass/screen.scss */
+.contacto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 75px 0;
+  border-top: 1px solid #878787;
+  border-bottom: 1px solid #878787;
+}
+/* line 353, ../sass/screen.scss */
+.contacto h1 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #092F87;
+}
+/* line 359, ../sass/screen.scss */
+.contacto p {
+  display: inline-block;
+  margin: 20px 0;
+  text-align: justify;
+  font-size: 18px;
+  color: #878787;
+}
+/* line 366, ../sass/screen.scss */
+.contacto .informacion {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-top: 60px;
+}
+/* line 371, ../sass/screen.scss */
+.contacto .informacion .caja-icono {
+  min-height: 255px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+/* line 378, ../sass/screen.scss */
+.contacto .informacion .caja-icono i {
+  font-size: 100px;
+  color: #FFF;
+}
+/* line 383, ../sass/screen.scss */
+.contacto .informacion span,
+.contacto .informacion a {
+  line-height: 20px;
+  text-align: center;
+  font-family: "Arimo Bold";
+  font-size: 16px;
+  color: #878787;
+}
+/* line 391, ../sass/screen.scss */
+.contacto .informacion a:hover {
+  color: #092F87;
+}
+/* line 394, ../sass/screen.scss */
+.contacto .informacion .ubicacion {
+  background: #092F87;
+}
+/* line 397, ../sass/screen.scss */
+.contacto .informacion .email {
+  background: #3D529D;
+}
+/* line 400, ../sass/screen.scss */
+.contacto .informacion .telefono {
+  background: #717AB6;
+}
+/* line 403, ../sass/screen.scss */
+.contacto .informacion .fax {
+  background: #A1A3CE;
+}
+/* line 407, ../sass/screen.scss */
+.contacto .contenedor-formulario-mapa {
+  padding-top: 80px;
+}
+/* line 409, ../sass/screen.scss */
+.contacto .contenedor-formulario-mapa .formulario {
+  padding: 30px 15px;
+  background: #BCBCBC;
+}
+/* line 412, ../sass/screen.scss */
+.contacto .contenedor-formulario-mapa .formulario h1 {
+  color: #FFF;
+}
+/* line 415, ../sass/screen.scss */
+.contacto .contenedor-formulario-mapa .formulario input,
+.contacto .contenedor-formulario-mapa .formulario select,
+.contacto .contenedor-formulario-mapa .formulario textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #FFF;
+  font-size: 18px;
+  color: #FFF;
+}
+/* line 426, ../sass/screen.scss */
+.contacto .contenedor-formulario-mapa .formulario select {
+  background: url("../svg/drop-down-arrow.svg") no-repeat;
+  background-position: 98% center;
+  background-size: contain;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+/* line 433, ../sass/screen.scss */
+.contacto .contenedor-formulario-mapa .formulario textarea {
+  min-height: 150px;
+  resize: none;
+}
+/* line 437, ../sass/screen.scss */
+.contacto .contenedor-formulario-mapa .formulario input[type=submit] {
+  font-size: 18px;
+  color: #FFF;
+}
+/* line 441, ../sass/screen.scss */
+.contacto .contenedor-formulario-mapa .formulario input[type=submit]:hover {
+  background: #092F87;
+  border: 1px solid #092F87;
+  cursor: pointer;
+}
+/* line 446, ../sass/screen.scss */
+.contacto .contenedor-formulario-mapa .formulario input::placeholder,
+.contacto .contenedor-formulario-mapa .formulario textarea::placeholder {
+  color: #FFF;
+}
+/* line 450, ../sass/screen.scss */
+.contacto .contenedor-formulario-mapa .formulario input:focus,
+.contacto .contenedor-formulario-mapa .formulario textarea:focus {
+  border: 1px solid #092F87;
+}
+/* line 455, ../sass/screen.scss */
+.contacto .contenedor-formulario-mapa .mapa {
+  width: 100%;
+  height: 100%;
+}
+
+/**/
+/*FOOTER*/
+/* line 464, ../sass/screen.scss */
+footer {
+  padding: 35px 0;
+}
+/* line 466, ../sass/screen.scss */
+footer .logo {
+  display: block;
+  margin-bottom: 35px;
+}
+/* line 469, ../sass/screen.scss */
+footer .logo img {
+  width: 100%;
+}
+/* line 473, ../sass/screen.scss */
+footer span {
+  font-size: 12px;
+  color: #878787;
+}
+/* line 477, ../sass/screen.scss */
+footer .informacion-contacto {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  border-right: 1px solid #878787;
+  border-left: 1px solid #878787;
+}
+/* line 483, ../sass/screen.scss */
+footer .informacion-contacto .direccion,
+footer .informacion-contacto .telefono,
+footer .informacion-contacto .email {
+  width: 260px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+/* line 492, ../sass/screen.scss */
+footer .informacion-contacto .direccion i,
+footer .informacion-contacto .telefono i,
+footer .informacion-contacto .email i {
+  width: 24px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 24px;
+  color: #092F87;
+}
+/* line 499, ../sass/screen.scss */
+footer .informacion-contacto .direccion span,
+footer .informacion-contacto .direccion a,
+footer .informacion-contacto .telefono span,
+footer .informacion-contacto .telefono a,
+footer .informacion-contacto .email span,
+footer .informacion-contacto .email a {
+  font-size: 12px;
+  color: #092F87;
+}
+/* line 504, ../sass/screen.scss */
+footer .informacion-contacto .direccion a:hover,
+footer .informacion-contacto .telefono a:hover,
+footer .informacion-contacto .email a:hover {
+  color: #878787;
+}
+/* line 508, ../sass/screen.scss */
+footer .informacion-contacto .telefono {
+  margin: 20px auto;
+}
+/* line 512, ../sass/screen.scss */
+footer .redes-sociales-footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+/* line 516, ../sass/screen.scss */
+footer .redes-sociales-footer a {
+  color: #878787;
+}
+/* line 519, ../sass/screen.scss */
+footer .redes-sociales-footer a:hover {
+  color: #092F87;
+}
+
+/**/

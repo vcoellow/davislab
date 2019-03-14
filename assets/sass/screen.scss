@@ -1,0 +1,524 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+/*FUENTES*/
+@font-face {
+	font-family: "Arimo";
+	src: url("../fonts/Arimo-Regular.eot");
+	src: url("../fonts/Arimo-Regular.woff") format("woff"),
+		 url("../fonts/Arimo-Regular.woff2") format("woff2"),
+		 url("../fonts/Arimo-Regular.svg#filename") format("svg");
+}
+@font-face {
+	font-family: "Arimo Bold";
+	src: url("../fonts/Arimo-Bold.eot");
+	src: url("../fonts/Arimo-Bold.woff") format("woff"),
+		 url("../fonts/Arimo-Bold.woff2") format("woff2"),
+		 url("../fonts/Arimo-Bold.svg#filename") format("svg");
+}
+/**/
+
+/*COLORES*/
+$blanco: #FFF;
+$negro: #000;
+$gris: #878787;
+$azul: #092F87;
+/**/
+
+/*GENÉRICOS*/
+*:focus {
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background: #EDEEF0;
+	font-family: "Arimo";
+}
+a {
+	text-decoration: none;
+	transition: .3s ease-in-out;
+}
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	transition: .3s ease-in;
+}
+img {
+	vertical-align: bottom;
+}
+
+/*HEADER*/
+.redes-sociales-header {
+	height: 40px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	a {
+		color: $gris;
+	}
+	a:hover {
+		color: $azul;
+	}
+}
+header {
+	padding: 35px 0;
+	.logo {
+		display: block;
+		img {
+			width: 250px;
+		}
+	}
+	nav {
+		ul {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: flex-end;
+			align-items: center;
+			li {
+				padding: 0 30px;
+				border-right: 1px solid $azul;
+				a {
+					padding-bottom: 10px;
+					border-bottom: 1px solid transparent;
+					line-height: 30px;
+					font-size: 12px;
+					color: $gris;
+				}
+				a:hover {
+					border-bottom: 1px solid $azul;
+					color: $gris;
+				}
+			}
+		}
+	}
+}
+/**/
+
+.linea {
+	width: 100%;
+	height: 1px;
+	position: relative;
+	background: $gris;
+}
+
+/*MAIN*/
+	.swiper-container {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 50px !important;
+		.swiper-slide {
+			padding: 100px 50px;
+			background-repeat: no-repeat !important;
+			background-size: cover !important;
+			.titulo {
+				display: inline-block;
+				margin-bottom: 20px;
+				padding: 10px;
+				background: rgba(9, 47, 135, 0.5);
+				font-family: "Arimo Bold";
+				font-size: 36px;
+				color: $blanco;
+			}
+			.texto {
+				max-width: 50%;
+				padding: 10px;
+				background: rgba(9, 47, 135, 0.5);
+				font-size: 20px;
+				color: $blanco;
+			}
+		}
+	}
+	.intro {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 75px 0;
+		h1 {
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			font-family: "Arimo Bold";
+			font-size: 22px;
+			color: $gris;
+		}
+		p {
+			display: inline-block;
+			margin: 20px 0;
+			text-align: justify;
+			font-size: 18px;
+			color: $gris;
+		}
+	}
+	.quienes-somos {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding: 75px 0;
+		h1 {
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			font-family: "Arimo Bold";
+			font-size: 22px;
+			color: $azul;
+		}
+		p {
+			display: inline-block;
+			margin: 20px 0;
+			text-align: justify;
+			font-size: 18px;
+			color: $gris;
+		}
+	}
+	.servicios {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 75px 0;
+		border-top: 1px solid $gris;
+		border-bottom: 1px solid $gris;
+		h1 {
+			margin-bottom: 80px;
+			text-transform: uppercase;
+			font-size: 24px;
+			color: $azul;
+		}
+		.farmaceutica {
+			background: #092F87 url('../images/bg-farmaceutica.png');
+		}
+		.bioequivalencia {
+			background: #3D529D url('../images/bg-bioequivalencia.png');
+		}
+		.cosmetica {
+			background: #717AB6 url('../images/bg-cosmetica.png');
+		}
+		.pesticida-plaguicidas {
+			background: #A1A3CE url('../images/bg-pesticida-plaguicidas.png');
+		}
+		.farmaceutica,
+		.bioequivalencia,
+		.cosmetica,
+		.pesticida-plaguicidas {
+			min-height: 255px;
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+			background-position: bottom right !important;
+			background-repeat: no-repeat !important;
+			background-size: contain;
+			span {
+				margin-bottom: 20px;
+				margin-left: 20px;
+				font-size: 24px;
+				color: $blanco;
+			}
+		}
+		.farmaceutica:hover,
+		.bioequivalencia:hover,
+		.cosmetica:hover,
+		.pesticida-plaguicidas:hover {
+			cursor: pointer;
+		}
+		.contenedor-tabs {
+			margin-top: 100px;
+			background: $blanco;
+			.ui-tabs-vertical {
+				.ui-tabs-nav {
+					li {
+						width: 100%;
+						position: relative;
+						a {
+							width: 100%;
+							display: block;
+						}
+					}
+					li.ui-state-active {
+						margin: 0 !important;
+					}
+				}
+			}
+			.titulo-tab {
+				width: 100%;
+				height: 60px;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: flex-start;
+				align-items: center;
+				margin-bottom: 20px;
+				padding-left: 20px;
+				background: $azul;
+				span {
+					font-size: 24px;
+					color: $blanco;
+				}
+				img {
+					margin: 0 20px;
+				}
+			}
+			#farmaceutica2 {
+				.titulo-tab {
+					background: #092F87;
+				}
+			}
+			#bioequivalencia2 {
+				.titulo-tab {
+					background: #3D529D;
+				}
+			}
+			#cosmetica2 {
+				.titulo-tab {
+					background: #717AB6;
+				}
+			}
+			#pesticida-plaguicidas2 {
+				.titulo-tab {
+					background: #A1A3CE;
+				}
+			}
+			#tabs1,
+			#tabs2,
+			#tabs3,
+			#tabs4 {
+				ul {
+					width: 100%;
+					li {
+						a {
+							padding: 20px;
+							background: #E3E3E3;
+							border-bottom: 1px solid $gris;
+							span {
+								font-size: 18px;
+								color: #706F6F;
+							}
+						}
+					}
+					li.ui-state-active {
+						a {
+							background: #C6C6C6 !important;
+							span {
+								font-family: "Arimo Bold";
+								color: $azul !important;
+							}
+						}
+						a:after {
+							margin-top: -31px;
+							border-top: 30px solid transparent;
+							border-bottom: 30px solid transparent;
+							border-left: 25px solid #C6C6C6;
+							position: absolute;
+							top: 50%;
+							left: 100%;
+							content: '';
+						}
+					}
+					li:last-child {
+						a {
+							border-bottom: 0 !important;
+						}
+					}
+					.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+						margin: 0 !important;
+					}
+				}
+				img {
+					width: 100%;
+					margin-bottom: 35px;
+				}
+				p {
+					margin: 20px 0;
+					font-size: 14px;
+					color: $gris;
+				}
+			}
+		}
+	}
+	.contacto {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 75px 0;
+		border-top: 1px solid $gris;
+		border-bottom: 1px solid $gris;
+		h1 {
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			font-size: 24px;
+			color: $azul;
+		}
+		p {
+			display: inline-block;
+			margin: 20px 0;
+			text-align: justify;
+			font-size: 18px;
+			color: $gris;
+		}
+		.informacion {
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+			margin-top: 60px;
+			.caja-icono {
+				min-height: 255px;
+				display: flex;
+				flex-flow: column wrap;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 30px;
+				i {
+					font-size: 100px;
+					color: $blanco;
+				}
+			}
+			span,
+			a {
+				line-height: 20px;
+				text-align: center;
+				font-family: "Arimo Bold";
+				font-size: 16px;
+				color: $gris;
+			}
+			a:hover {
+				color: $azul;
+			}
+			.ubicacion {
+				background: #092F87;
+			}
+			.email {
+				background: #3D529D;
+			}
+			.telefono {
+				background: #717AB6;
+			}
+			.fax {
+				background: #A1A3CE;
+			}
+		}
+		.contenedor-formulario-mapa {
+			padding-top: 80px;
+			.formulario {
+				padding: 30px 15px;
+				background: #BCBCBC;
+				h1 {
+					color: $blanco;
+				}
+				input,
+				select,
+				textarea {
+					width: 100%;
+					margin: 10px 0;
+					padding: 10px;
+					background: transparent;
+					border: 1px solid $blanco;
+					font-size: 18px;
+					color: $blanco;
+				}
+				select {
+					background: url('../svg/drop-down-arrow.svg') no-repeat;
+					background-position: 98% center;
+					background-size: contain;
+					border-radius: 0;
+					-webkit-appearance: none;
+				}
+				textarea {
+					min-height: 150px;
+					resize: none;
+				}
+				input[type=submit] {
+					font-size: 18px;
+					color: $blanco;
+				}
+				input[type=submit]:hover {
+					background: $azul;
+					border: 1px solid $azul;
+					cursor: pointer;
+				}
+				input::placeholder,
+				textarea::placeholder {
+					color: $blanco;
+				}
+				input:focus,
+				textarea:focus {
+					border: 1px solid $azul;
+				}
+			}
+			.mapa {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+/**/
+
+/*FOOTER*/
+footer {
+	padding: 35px 0;
+	.logo {
+		display: block;
+		margin-bottom: 35px;
+		img {
+			width: 100%;
+		}
+	}
+	span {
+		font-size: 12px;
+		color: $gris;
+	}
+	.informacion-contacto {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		border-right: 1px solid $gris;
+		border-left: 1px solid $gris;
+		.direccion,
+		.telefono,
+		.email {
+			width: 260px;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: flex-start;
+			align-items: center;
+			margin: 0 auto;
+			i {
+				width: 24px;
+				margin-right: 10px;
+				text-align: center;
+				font-size: 24px;
+				color: $azul;
+			}
+			span,
+			a {
+				font-size: 12px;
+				color: $azul;
+			}
+			a:hover {
+				color: $gris;
+			}
+		}
+		.telefono {
+			margin: 20px auto;
+		}
+	}
+	.redes-sociales-footer {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		a {
+			color: $gris;
+		}
+		a:hover {
+			color: $azul;
+		}
+	}
+}
+/**/
